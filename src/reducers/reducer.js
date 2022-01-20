@@ -1,20 +1,39 @@
-import { GENERATE_ACTIVITY } from '../actions/actions';
+import { FETCH_START, FETCH_FAIL, FETCH_SUCCESS } from '../actions/actions';
 
 const initialState = {
-   activity = ''
+   activity: '',
+   isFetching: false,
+   error: ''
 }
 
-const reducer = (state, action) => {
+const reducer = (state=initialState, action) => {
     
     switch (action.type) {
 
-        case GENERATE_ACTIVITY:
-            return { ...state, activity: state.activity };
-       
+        case FETCH_START:
+            return{ ...state,
+            activity: '',
+            isFetching: true,
+            error: ''
+        };
+
+        case FETCH_FAIL:
+            return { ...state,
+                activity: '',
+                isFetching: false,
+                error: action.payload
+            }
+
+        case FETCH_SUCCESS:
+            return{ ...state,
+                activity: action.payload,
+                isFetching: false,
+                error: ''
+            };
+
         default:
             return state;
         }
-
     };
 
 export default reducer;
