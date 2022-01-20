@@ -9,18 +9,21 @@ module.exports = {
     publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
   },
+
   devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
     }),
   ],
+  
   devServer: {
     static: path.join(__dirname, 'dist'),
     compress: true,
     historyApiFallback: true,
     port: 3000,
   },
+
   module: {
     rules: [
       {
