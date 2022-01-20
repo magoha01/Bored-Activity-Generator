@@ -1,7 +1,6 @@
 *{
-
+	overflow-y: hidden;
 }
-
 
 body {
 	background: #90bcd1;
@@ -13,10 +12,8 @@ body {
 
 h1{
 	padding: 5%;
-	/* margin-bottom: ; */
 	color: white;
 	font-size: 10rem;
 	font-weight: bold;
-	/* text-shadow: -3px 0 #f76211, 0 3px #f76211, 3px 0 #f76211, 0 -3px #f76211; */
 	background-color: #f76211
 }

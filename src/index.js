@@ -8,7 +8,6 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
 import reducer from './reducers/reducer';
-
 import App from './App';
 
 import './index.css';

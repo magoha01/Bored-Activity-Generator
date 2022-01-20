@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 export const GENERATE_ACTIVITY = "GENERATE_ACTIVITY"
 export const FETCH_START = "FETCH_START";
 export const FETCH_FAIL = "FETCH_FAIL";

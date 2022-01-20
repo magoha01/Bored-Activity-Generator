@@ -1,11 +1,7 @@
 import React from 'react';
 import './App.css';
 
-//import { connect } from 'react-redux';
-
 import RandomActivity from './components/randomActivity';
-
-
 
 function App() {
 
@@ -16,7 +12,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;

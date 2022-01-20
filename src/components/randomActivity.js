@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-//import { generateActivity } from '../actions/actions';
 import {  getActivity  } from '../actions/actions'
-import axios from 'axios';
+
 
 const RandomActivity = (props) => {
 
-    const { randomActivity, error, isFetching, dispatch} = props;
+    const { randomActivity, error, isFetching, dispatch } = props;
 
     useEffect(()=>{
         dispatch(getActivity());
@@ -17,7 +16,7 @@ const RandomActivity = (props) => {
     }
 
     if (isFetching) {
-        return <img src={'https://media2.giphy.com/media/d7mMzaGDYkz4ZBziP6/giphy.gif?cid=ecf05e47475gvvue798acppzg2f0p5fyqpaecylh6eeze5nz&rid=giphy.gif&ct=g'} alt="loading..." />
+        return <img className="waitPhoto" src={'https://media2.giphy.com/media/d7mMzaGDYkz4ZBziP6/giphy.gif?cid=ecf05e47475gvvue798acppzg2f0p5fyqpaecylh6eeze5nz&rid=giphy.gif&ct=g'} alt="Loading..." />
     }
     
     const handleGetActivity = () => {
