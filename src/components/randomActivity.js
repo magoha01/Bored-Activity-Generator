@@ -17,7 +17,7 @@ const RandomActivity = (props) => {
     }
 
     if (isFetching) {
-        return <h2>FETCHING</h2>
+        return <img src={'https://media2.giphy.com/media/d7mMzaGDYkz4ZBziP6/giphy.gif?cid=ecf05e47475gvvue798acppzg2f0p5fyqpaecylh6eeze5nz&rid=giphy.gif&ct=g'} alt="loading..." />
     }
     
     const handleGetActivity = () => {
@@ -26,9 +26,9 @@ const RandomActivity = (props) => {
 
 
     return (
-        <div>
-            <p>{randomActivity}</p>
-            <button onClick={handleGetActivity}>Generate Activity</button>
+        <div className="activity">
+            <p>{randomActivity}!</p>
+            <button onClick={handleGetActivity}>Generate New Activity</button>
         </div>
     )
 }

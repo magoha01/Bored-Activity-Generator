@@ -13,7 +13,7 @@ const reducer = (state=initialState, action) => {
 
         case FETCH_START:
             return{ ...state,
-            randomActivity: '',
+            randomActivity: 'Press the Button!',
             isFetching: true,
             error: ''
         };
