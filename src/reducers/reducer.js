@@ -1,7 +1,8 @@
 import { FETCH_START, FETCH_FAIL, FETCH_SUCCESS } from '../actions/actions';
 
 const initialState = {
-   activity: '',
+
+   randomActivity: '',
    isFetching: false,
    error: ''
 }
@@ -12,21 +13,21 @@ const reducer = (state=initialState, action) => {
 
         case FETCH_START:
             return{ ...state,
-            activity: '',
+            randomActivity: '',
             isFetching: true,
             error: ''
         };
 
         case FETCH_FAIL:
             return { ...state,
-                activity: '',
+                randomActivity: '',
                 isFetching: false,
                 error: action.payload
             }
 
         case FETCH_SUCCESS:
             return{ ...state,
-                activity: action.payload,
+                randomActivity: action.payload,
                 isFetching: false,
                 error: ''
             };

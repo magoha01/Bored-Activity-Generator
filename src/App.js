@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-     <h1>Get Entertained!</h1> 
+     <h1>Bored?</h1> 
      <RandomActivity />
     </div>
   );
