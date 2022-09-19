@@ -6,19 +6,21 @@
 
 p{
   color: white;
-  font-size: 3rem;
+  font-size: 2.75rem;
+  margin: 6%;
 }
 
 button {
   background-color: white;
   color: #f76211;
-  padding: 3% 2%;
-  margin: 5%;
+  padding: 3% 2.75%;
+
   border-radius: 20px;
   font-size: 2rem;
   font-weight: bold;
   border: none;
   border: 3px solid #f76211;
+  margin: 1%;
 }
 
 button:hover{
@@ -26,13 +28,27 @@ button:hover{
   color: white;
   border: 3px solid white;
 }
+button:focus {
+  outline: none;
+}
+
+.generator{
+
+}
 
 .activity{
-  margin: 5%;
-  border-radius: 20px;
+  height: 35vh;
+}
+
+.generateButton{
+  height: 25vh;
+  margin: auto;
 }
 
 img{
   border-radius: 20px; 
   border: 3px solid white;
+  height:35vh; 
+  width: 30%;
+
 }

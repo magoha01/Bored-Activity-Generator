@@ -4,10 +4,8 @@
 
 body {
 	background: #90bcd1;
-	/* margin: 25% auto ; */
 	font-family: 'Raleway', sans-serif;
 	width: 100%;
-	height: 100%;
 }
 
 h1{
@@ -15,5 +13,6 @@ h1{
 	color: white;
 	font-size: 10rem;
 	font-weight: bold;
-	background-color: #f76211
+	background-color: #f76211;
+	height: 40vh;
 }
